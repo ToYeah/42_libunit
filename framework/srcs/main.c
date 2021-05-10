@@ -65,7 +65,7 @@ void exec_test(t_unit_test* test)
 
 	pid = fork();
 	if (pid < 0)
-	{}//TODO error
+		error_exit();
 	if (pid == 0)
 	{
 		test_result = test->func();
@@ -89,26 +89,34 @@ const char* str_test_res(t_test_res res)
 		return "UNKNOWN";
 }
 
+size_t	my_strlen(const char *str)
+{
+	size_t res;
+
+	res = 0;
+	while(str[res])
+		res++;
+	return (res);
+}
+
+
 char	*my_strdup(const char *str)
 {
-	size_t index;
+	size_t len;
 	char *res;
 
-	index = 0;
-	while(str[index])
-		index++;
-	res = malloc(sizeof(char) * (index + 1));
+	len = my_strlen(str);
+	res = malloc(sizeof(char) * (len + 1));
 	if (res == NULL)
 		return NULL;
-	index = 0;
-	while (str[index])
+	len = 0;
+	while (str[len])
 	{
-		res[index] = str[index];
-		index++;
+		res[len] = str[len];
+		len++;
 	}
 	return res;
 }
-
 
 int launch_tests(t_unit_test **test)
 {
@@ -130,4 +138,3 @@ int	main()
 	list = list_init();
 	launch_tests(&list);
 }
-

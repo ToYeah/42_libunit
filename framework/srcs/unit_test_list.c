@@ -6,7 +6,7 @@ t_unit_test	*test_init(const char *description, t_test_func f)
 
 	res = malloc(sizeof(t_unit_test));
 	if (res == NULL)
-		return (NULL);
+		error_exit();
 	res->func = f;
 	res->next = NULL;
 	res->prev = NULL;
