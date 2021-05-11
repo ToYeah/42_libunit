@@ -1,8 +1,8 @@
-#include "../includes/libunit.h"
+#include "libunit.h"
 
-void error_exit()
+void	error_exit(void)
 {
-	const char *str;
+	const char	*str;
 
 	str = "ERROR EXIT";
 	write(2, str, my_strlen(str));
