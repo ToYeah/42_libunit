@@ -5,34 +5,6 @@
 #include <signal.h>
 #include "../includes/libunit.h"
 
-int	error_func()
-{
-	return (-1);
-}
-
-int	good_func()
-{
-	return (0);
-}
-
-int segv_func()
-{
-	int *a;
-	a = NULL;
-	return (*a);
-}
-
-t_unit_test	*list_init()
-{
-	t_unit_test *list;
-
-	list = NULL;
-	load_test(&list, "Good Test", good_func);
-	load_test(&list, "Bad Test", error_func);
-	load_test(&list, "Segv Test", segv_func);
-	return list;
-} 
-
 t_test_res analyze_test_result(int status)
 {
 	int sig;
@@ -85,8 +57,7 @@ const char* str_test_res(t_test_res res)
 		return "SEGV";
 	if (res == RESBUS)
 		return "BUS";
-	if (res == RESUNKNOWN)
-		return "UNKNOWN";
+	return "UNKNOWN";
 }
 
 int launch_tests(t_unit_test **test)
@@ -100,12 +71,7 @@ int launch_tests(t_unit_test **test)
 		printf("%s: %s\n",str_test_res(target->res), target->description);
 		target = target->next;
 	}
-}
 
-int	main()
-{
-	t_unit_test *list;
-
-	list = list_init();
-	launch_tests(&list);
+	delete_test_list(test);
+	return (0);
 }
