@@ -8,7 +8,8 @@ SRCS		= main.c \
 				atoi/09_blank_test.c atoi/10_blank2_test.c atoi/11_escape_test.c \
 				atoi/12_escape2_test.c atoi/13_text_test.c atoi/14_text2_test.c \
 				atoi/15_longmax_test.c atoi/16_longmin_test.c \
-				isdigit/01_basic_test.c isdigit/02_null_test.c isdigit/00_launcher.c isdigit/03_alpha_test.c
+				isdigit/00_launcher.c isdigit/01_basic_test.c isdigit/02_null_test.c isdigit/03_alpha_test.c \
+				isalpha/00_launcher.c isalpha/01_basic_test.c isalpha/02_null_test.c isalpha/03_digit_test.c
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
