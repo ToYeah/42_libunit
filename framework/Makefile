@@ -1,6 +1,6 @@
 NAME=libunit.a
 
-SRCS= srcs/my_libft.c srcs/unit_test_list.c srcs/launch_tests.c srcs/error.c srcs/load_func.c 
+SRCS= srcs/my_libft.c srcs/unit_test_list.c srcs/launch_tests.c srcs/print_result.c srcs/error.c srcs/load_func.c srcs/exec_test.c 
 CC=gcc
 CCFLAGS=-Wall -Wextra -Werror
 AR=ar
