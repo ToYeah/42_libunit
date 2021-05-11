@@ -2,8 +2,12 @@ NAME		= libfttest
 SRCS		= main.c \
 				strlen/01_basic_test.c strlen/02_null_test.c strlen/00_launcher.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
-				atoi/01_basic_test.c atoi/02_null_test.c atoi/00_launcher.c\
-				atoi/03_intmax_test.c atoi/04_intmin_test.c \
+				atoi/00_launcher.c atoi/01_basic_test.c atoi/02_basic2_test.c \
+				atoi/03_zero_test.c atoi/04_null_test.c atoi/05_neg_test.c \
+				atoi/06_neg2_test.c atoi/07_intmax_test.c atoi/08_intmin_test.c \
+				atoi/09_blank_test.c atoi/10_blank2_test.c atoi/11_escape_test.c \
+				atoi/12_escape2_test.c atoi/13_text_test.c atoi/14_text2_test.c \
+				atoi/15_longmax_test.c atoi/16_longmin_test.c \
 				isdigit/01_basic_test.c isdigit/02_null_test.c isdigit/00_launcher.c isdigit/03_alpha_test.c
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror

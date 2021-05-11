@@ -1,9 +1,12 @@
 #include "libft.h"
 #include <string.h>
 
-int	atoi_basic_test(void)
+int	atoi_text_test(void)
 {
-    if (ft_atoi("12345") == atoi("12345"))
+	char	*s;
+
+	s = "adg123";
+    if (ft_atoi(s) == atoi(s))
         return(0);
     else
         return(-1);

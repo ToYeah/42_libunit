@@ -1,6 +1,8 @@
 NAME=libft.a
 SRCS=\
-ft_strlen.c
+ft_strlen.c\
+ft_atoi.c\
+ft_isdigit.c
 
 CC=gcc
 CCFLAGS=-Wall -Wextra -Werror

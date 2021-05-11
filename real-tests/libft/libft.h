@@ -4,5 +4,7 @@
 # include <stdlib.h>
 
 size_t ft_strlen(const char *s);
+int ft_atoi(const char *str);
+int ft_isdigit(int c);
 
 #endif
