@@ -1,6 +1,9 @@
 NAME		= libfttest
-SRCS		= main.c strlen/01_basic_test.c strlen/02_null_test.c strlen/00_launcher.c\
-				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c
+SRCS		= main.c \
+				strlen/01_basic_test.c strlen/02_null_test.c strlen/00_launcher.c\
+				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
+				atoi/01_basic_test.c atoi/02_null_test.c atoi/00_launcher.c\
+				atoi/03_intmax_test.c atoi/04_intmin_test.c
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
@@ -14,9 +17,9 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
-TESTINCLUDE	= -I strlen 
+TESTINCLUDE	= -I strlen -I atoi
 
-INCLUDES=$(TESTINCLUDE) -I $(LIBUNIT_DIR)/includes -I $(TARGET_DIR)
+INCLUDES=$(TESTINCLUDE) $(TESTINCLUDE_A) -I $(LIBUNIT_DIR)/includes -I $(TARGET_DIR)
 
 all: $(NAME)
 
