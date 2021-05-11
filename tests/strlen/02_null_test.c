@@ -3,12 +3,12 @@
 
 int	null_test(void)
 {
-    char *str;
+	char *str;
 
-    str = NULL;
+	str = NULL;
 
-    if (ft_strlen(str) == strlen(str))
-        return(0);
-    else
-        return(-1);
+	if (ft_strlen(str) == strlen(str))
+		return(0);
+	else
+		return(-1);
 }

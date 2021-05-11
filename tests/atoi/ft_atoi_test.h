@@ -19,6 +19,6 @@ int	atoi_text_test(void);
 int	atoi_text2_test(void);
 int	atoi_longmax_test(void);
 int	atoi_longmin_test(void);
-int atoi_launcher(void);
+int	atoi_launcher(void);
 
 #endif
