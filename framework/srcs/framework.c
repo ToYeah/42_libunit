@@ -13,12 +13,17 @@ void	load_test(t_unit_test **list, const char *description, t_test_func f)
 int	launch_tests(t_unit_test **test)
 {
 	t_unit_test	*target;
+	int			test_res;
 
+	test_res = 0;
 	if (test == NULL || *test == NULL)
 		error_exit();
 	target = *test;
-	target = exec_test_list(*test);
+	target = exec_test_list(*test, &test_res);
 	target = print_test_list(target);
 	delete_test_list(&target);
-	return (0);
+	if (test_res == 0)
+		return (0);
+	else
+		return (-1);
 }

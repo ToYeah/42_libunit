@@ -13,8 +13,8 @@ typedef int					(*t_test_func)(void);
 
 typedef enum e_test_res
 {
-	RESKO = -1,
 	RESOK,
+	RESKO,
 	RESSEGV,
 	RESBUS,
 	RESUNKNOWN
@@ -39,6 +39,6 @@ void		test_add_front(t_unit_test **list_p, t_unit_test *new);
 void		error_exit(void);
 void		load_test(t_unit_test **list, const char *des, t_test_func f);
 int			launch_tests(t_unit_test **test);
-t_unit_test	*exec_test_list(t_unit_test *list);
+t_unit_test	*exec_test_list(t_unit_test *list, int *res);
 t_unit_test	*print_test_list(t_unit_test *list);
 #endif
