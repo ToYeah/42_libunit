@@ -6,11 +6,13 @@ CCFLAGS=-Wall -Wextra -Werror
 AR=ar
 ARFLAGS=crs
 OBJS=$(SRCS:.c=.o)
+INCLUDE_DIR=includes
+INCLUDE=-I $(INCLUDE_DIR)/
 
 all: $(NAME)
 
 .c.o:
-	$(CC) $(CCFLAGS) -c $< -o $(<:.c=.o)
+	$(CC) $(CCFLAGS) $(INCLUDE) -c $< -o $(<:.c=.o)
 
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
