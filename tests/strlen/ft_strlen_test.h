@@ -5,6 +5,9 @@
 
 int	basic_test(void);
 int	null_test(void);
+int	unicode_test(void);
+int	empty_test(void);
+int	zero_test(void);
 int strlen_launcher(void);
 
 #endif

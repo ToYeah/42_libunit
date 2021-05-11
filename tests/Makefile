@@ -1,5 +1,6 @@
 NAME		= libfttest
-SRCS		= main.c strlen/01_basic_test.c strlen/02_null_test.c strlen/00_launcher.c 
+SRCS		= main.c strlen/01_basic_test.c strlen/02_null_test.c strlen/00_launcher.c\
+				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
