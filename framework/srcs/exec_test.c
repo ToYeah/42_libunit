@@ -42,7 +42,7 @@ void	exec_test(t_unit_test *test)
 	test->res = analyze_test_result(status);
 }
 
-t_unit_test *exec_test_list(t_unit_test *list)
+t_unit_test	*exec_test_list(t_unit_test *list)
 {
 	t_unit_test	*target;
 
@@ -51,9 +51,9 @@ t_unit_test *exec_test_list(t_unit_test *list)
 	{
 		exec_test(target);
 		if (target->next == NULL)
-			break;
+			break ;
 		else
 			target = target->next;
 	}
-	return target;
+	return (target);
 }

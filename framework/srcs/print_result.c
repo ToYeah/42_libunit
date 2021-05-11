@@ -13,7 +13,7 @@ const char	*str_test_res(t_test_res res)
 	return ("UNKNOWN");
 }
 
-t_unit_test *print_test_list(t_unit_test *list)
+t_unit_test	*print_test_list(t_unit_test *list)
 {
 	t_unit_test	*target;
 
@@ -22,9 +22,9 @@ t_unit_test *print_test_list(t_unit_test *list)
 	{
 		printf("%s: %s\n", str_test_res(target->res), target->description);
 		if (target->prev == NULL)
-			break;
+			break ;
 		else
 			target = target->prev;
 	}
-	return target;
+	return (target);
 }
