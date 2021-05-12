@@ -1,8 +1,8 @@
-#include "../includes/libunit.h"
+#include "libunit.h"
 
 t_unit_test	*test_init(const char *description, t_test_func f)
 {
-	t_unit_test *res;
+	t_unit_test	*res;
 
 	res = malloc(sizeof(t_unit_test));
 	if (res == NULL)
@@ -20,7 +20,7 @@ t_unit_test	*test_init(const char *description, t_test_func f)
 	return (res);
 }
 
-void delete_test(t_unit_test **test)
+void	delete_test(t_unit_test **test)
 {
 	if (*test == NULL)
 		return ;
@@ -30,10 +30,10 @@ void delete_test(t_unit_test **test)
 	*test = NULL;
 }
 
-void delete_test_list(t_unit_test **list)
+void	delete_test_list(t_unit_test **list)
 {
-	t_unit_test *tmp;
-	t_unit_test *target;
+	t_unit_test	*tmp;
+	t_unit_test	*target;
 
 	if (*list == NULL)
 		return ;
@@ -47,9 +47,9 @@ void delete_test_list(t_unit_test **list)
 	}
 }
 
-void test_add_front(t_unit_test **list_p, t_unit_test *new)
+void	test_add_front(t_unit_test **list_p, t_unit_test *new)
 {
-	t_unit_test *list;
+	t_unit_test	*list;
 
 	if (new == NULL)
 		return ;
