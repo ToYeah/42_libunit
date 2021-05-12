@@ -2,7 +2,8 @@ NAME=libft.a
 SRCS=\
 ft_strlen.c\
 ft_atoi.c\
-ft_isdigit.c
+ft_isdigit.c \
+ft_isalpha.c
 
 CC=gcc
 CCFLAGS=-Wall -Wextra -Werror
