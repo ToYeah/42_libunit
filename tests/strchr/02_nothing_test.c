@@ -1,11 +1,11 @@
 #include "libft.h"
 #include <string.h>
 
-int			strchr_null_test(void)
+int			strchr_nothing_test(void)
 {
 	char	*str;
 
-	str = NULL;
+	str = "aaaaaaaa";
 	if (ft_strchr(str, 'e') == strchr(str, 'e'))
 		return(0);
 	else

@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: totaisei <totaisei@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/08 22:12:27 by totaisei          #+#    #+#             */
-/*   Updated: 2020/10/08 22:12:37 by totaisei         ###   ########.fr       */
+/*   Created: 2020/10/08 21:36:34 by totaisei          #+#    #+#             */
+/*   Updated: 2020/10/08 21:36:39 by totaisei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	if ('0' <= c && c <= '9')
-		return (1);
-	return (0);
+	size_t			i;
+	unsigned char	*casted_pointer;
+	unsigned char	casted_char;
+
+	casted_pointer = (unsigned char *)b;
+	casted_char = (unsigned char)c;
+	i = 0;
+	while (i < len)
+	{
+		casted_pointer[i] = casted_char;
+		i++;
+	}
+	return (b);
 }

@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int	strchr_basic_test(void);
-int	strchr_null_test(void);
+int	strchr_nothing_test(void);
 int	strchr_launcher(void);
 
 #endif

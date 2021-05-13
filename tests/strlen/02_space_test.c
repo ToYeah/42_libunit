@@ -1,11 +1,11 @@
 #include "libft.h"
 #include <string.h>
 
-int	null_test(void)
+int	space_test(void)
 {
 	char *str;
 
-	str = NULL;
+	str = "aaaa     aaa";
 
 	if (ft_strlen(str) == strlen(str))
 		return(0);

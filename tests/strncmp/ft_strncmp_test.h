@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int	strncmp_basic_test(void);
-int	strncmp_null_test(void);
+int	strncmp_same_str_test(void);
 int	strncmp_launcher(void);
 
 #endif

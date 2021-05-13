@@ -31,6 +31,7 @@ typedef struct s_unit_test
 
 char		*my_strdup(const char *str);
 size_t		my_strlen(const char *str);
+int			my_strcmp(const char *s1, const char *s2);
 
 t_unit_test	*test_init(const char *description, t_test_func f);
 void		delete_test(t_unit_test **test);

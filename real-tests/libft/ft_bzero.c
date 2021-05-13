@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: totaisei <totaisei@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/08 22:12:27 by totaisei          #+#    #+#             */
-/*   Updated: 2020/10/08 22:12:37 by totaisei         ###   ########.fr       */
+/*   Created: 2020/10/08 21:38:02 by totaisei          #+#    #+#             */
+/*   Updated: 2020/10/08 21:38:47 by totaisei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if ('0' <= c && c <= '9')
-		return (1);
-	return (0);
+	size_t			i;
+	unsigned char	*casted_pointer;
+
+	casted_pointer = (unsigned char *)s;
+	i = 0;
+	if (n != 0)
+	{
+		while (i < n)
+		{
+			casted_pointer[i] = 0;
+			i++;
+		}
+	}
 }

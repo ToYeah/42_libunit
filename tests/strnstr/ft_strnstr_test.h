@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int	strnstr_basic_test(void);
-int	strnstr_null_test(void);
+int	strnstr_nothing_test(void);
 int	strnstr_launcher(void);
 
 #endif

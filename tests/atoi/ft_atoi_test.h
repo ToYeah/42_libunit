@@ -6,7 +6,6 @@
 int	atoi_basic_test(void);
 int	atoi_basic2_test(void);
 int	atoi_zero_test(void);
-int	atoi_null_test(void);
 int	atoi_neg_test(void);
 int	atoi_neg2_test(void);
 int	atoi_intmax_test(void);
