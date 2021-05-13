@@ -3,6 +3,8 @@ SRCS		= main.c \
 				strlen/00_launcher.c strlen/01_basic_test.c strlen/02_null_test.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
 				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_null_test.c strdup/03_empty_test.c\
+				strchr/00_launcher.c strchr/01_basic_test.c strchr/02_null_test.c\
+				strncmp/00_launcher.c strncmp/01_basic_test.c strncmp/02_null_test.c\
 				memset/00_launcher.c memset/01_basic_test.c memset/02_null_test.c memset/03_zero_test.c\
 				memcpy/00_launcher.c memcpy/01_basic_test.c memcpy/02_dest_null_test.c memcpy/03_src_empty_test.c\
 				atoi/00_launcher.c atoi/01_basic_test.c atoi/02_basic2_test.c \
@@ -15,7 +17,7 @@ SRCS		= main.c \
 				isalpha/00_launcher.c isalpha/01_basic_test.c isalpha/02_null_test.c isalpha/03_digit_test.c\
 				isalnum/00_launcher.c isalnum/01_basic_test.c isalnum/02_basic_2_test.c isalnum/03_null_test.c\
 				tolower/00_launcher.c tolower/01_basic_test.c tolower/02_lower_test.c\
-				toupper/00_launcher.c toupper/01_basic_test.c toupper/02_upper_test.c 
+				toupper/00_launcher.c toupper/01_basic_test.c toupper/02_upper_test.c
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
@@ -29,7 +31,11 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
-TESTINCLUDE	= -I strlen -I atoi -I strdup -I memset -I memcpy -I isdigit -I isalpha -I isalnum -I tolower -I toupper
+TESTINCLUDE	= -I atoi\
+				-I strlen -I strdup -I strchr -I strncmp\
+				-I memset -I memcpy\
+				-I isdigit -I isalpha -I isalnum\
+				-I tolower -I toupper
 
 INCLUDES=$(TESTINCLUDE) $(TESTINCLUDE_A) -I $(LIBUNIT_DIR)/includes -I $(TARGET_DIR)
 
