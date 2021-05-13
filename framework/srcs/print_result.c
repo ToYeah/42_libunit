@@ -13,7 +13,7 @@ const char	*str_test_res(t_test_res res)
 	return ("UNKNOWN");
 }
 
-t_unit_test	*print_test_list(t_unit_test *list)
+t_unit_test	*print_test_list(t_unit_test *list, int count, int res)
 {
 	t_unit_test	*target;
 
@@ -26,5 +26,6 @@ t_unit_test	*print_test_list(t_unit_test *list)
 		else
 			target = target->prev;
 	}
+	printf("result: %d/%d\n", res, count);
 	return (target);
 }
