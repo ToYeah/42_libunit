@@ -1,16 +1,18 @@
 NAME=libunit.a
 
-SRCS= srcs/my_libft.c srcs/unit_test_list.c srcs/launch_tests.c srcs/error.c srcs/load_func.c 
+SRCS= srcs/my_libft.c srcs/framework.c srcs/unit_test_list.c srcs/print_result.c srcs/error.c srcs/exec_test.c 
 CC=gcc
 CCFLAGS=-Wall -Wextra -Werror
 AR=ar
 ARFLAGS=crs
 OBJS=$(SRCS:.c=.o)
+INCLUDE_DIR=includes
+INCLUDE=-I $(INCLUDE_DIR)/
 
 all: $(NAME)
 
 .c.o:
-	$(CC) $(CCFLAGS) -c $< -o $(<:.c=.o)
+	$(CC) $(CCFLAGS) $(INCLUDE) -c $< -o $(<:.c=.o)
 
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
