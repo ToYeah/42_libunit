@@ -4,6 +4,7 @@
 #include "ft_memcpy_test.h"
 #include "ft_isdigit_test.h"
 #include "ft_isalpha_test.h"
+#include "ft_isalnum_test.h"
 #include "libunit.h"
 
 int main(void)
@@ -14,4 +15,5 @@ int main(void)
 	memcpy_launcher();
 	isdigit_launcher();
 	isalpha_launcher();
+	isalnum_launcher();
 }
