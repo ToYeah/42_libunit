@@ -13,7 +13,9 @@ SRCS		= main.c \
 				atoi/15_longmax_test.c atoi/16_longmin_test.c \
 				isdigit/00_launcher.c isdigit/01_basic_test.c isdigit/02_null_test.c isdigit/03_alpha_test.c \
 				isalpha/00_launcher.c isalpha/01_basic_test.c isalpha/02_null_test.c isalpha/03_digit_test.c\
-				isalnum/00_launcher.c isalnum/01_basic_test.c isalnum/02_basic_2_test.c isalnum/03_null_test.c
+				isalnum/00_launcher.c isalnum/01_basic_test.c isalnum/02_basic_2_test.c isalnum/03_null_test.c\
+				tolower/00_launcher.c tolower/01_basic_test.c tolower/02_lower_test.c\
+				toupper/00_launcher.c toupper/01_basic_test.c toupper/02_upper_test.c 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
@@ -27,7 +29,7 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
-TESTINCLUDE	= -I strlen -I atoi -I strdup -I memset -I memcpy -I isdigit -I isalpha -I isalnum
+TESTINCLUDE	= -I strlen -I atoi -I strdup -I memset -I memcpy -I isdigit -I isalpha -I isalnum -I tolower -I toupper
 
 INCLUDES=$(TESTINCLUDE) $(TESTINCLUDE_A) -I $(LIBUNIT_DIR)/includes -I $(TARGET_DIR)
 

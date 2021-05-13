@@ -6,6 +6,8 @@
 #include "ft_isdigit_test.h"
 #include "ft_isalpha_test.h"
 #include "ft_isalnum_test.h"
+#include "ft_tolower_test.h"
+#include "ft_toupper_test.h"
 #include "libunit.h"
 
 int main(void)
@@ -18,4 +20,6 @@ int main(void)
 	isdigit_launcher();
 	isalpha_launcher();
 	isalnum_launcher();
+	tolower_launcher();
+	toupper_launcher();
 }
