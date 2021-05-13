@@ -3,6 +3,7 @@ SRCS		= main.c \
 				strlen/00_launcher.c strlen/01_basic_test.c strlen/02_null_test.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
 				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_null_test.c strdup/03_empty_test.c\
+				memset/00_launcher.c memset/01_basic_test.c memset/02_null_test.c memset/03_zero_test.c\
 				memcpy/00_launcher.c memcpy/01_basic_test.c memcpy/02_dest_null_test.c memcpy/03_src_empty_test.c\
 				atoi/00_launcher.c atoi/01_basic_test.c atoi/02_basic2_test.c \
 				atoi/03_zero_test.c atoi/04_null_test.c atoi/05_neg_test.c \
@@ -26,7 +27,7 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
-TESTINCLUDE	= -I strlen -I atoi -I strdup -I memcpy -I isdigit -I isalpha -I isalnum
+TESTINCLUDE	= -I strlen -I atoi -I strdup -I memset -I memcpy -I isdigit -I isalpha -I isalnum
 
 INCLUDES=$(TESTINCLUDE) $(TESTINCLUDE_A) -I $(LIBUNIT_DIR)/includes -I $(TARGET_DIR)
 
