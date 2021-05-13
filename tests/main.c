@@ -3,6 +3,7 @@
 #include "ft_strdup_test.h"
 #include "ft_strchr_test.h"
 #include "ft_strncmp_test.h"
+#include "ft_strnstr_test.h"
 #include "ft_memset_test.h"
 #include "ft_memcpy_test.h"
 #include "ft_isdigit_test.h"
@@ -19,6 +20,7 @@ int main(void)
 	strdup_launcher();
 	strchr_launcher();
 	strncmp_launcher();
+	strnstr_launcher();
 	memset_launcher();
 	memcpy_launcher();
 	isdigit_launcher();

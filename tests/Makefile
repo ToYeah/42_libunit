@@ -5,6 +5,7 @@ SRCS		= main.c \
 				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_null_test.c strdup/03_empty_test.c\
 				strchr/00_launcher.c strchr/01_basic_test.c strchr/02_null_test.c\
 				strncmp/00_launcher.c strncmp/01_basic_test.c strncmp/02_null_test.c\
+				strnstr/00_launcher.c strnstr/01_basic_test.c strnstr/02_null_test.c\
 				memset/00_launcher.c memset/01_basic_test.c memset/02_null_test.c memset/03_zero_test.c\
 				memcpy/00_launcher.c memcpy/01_basic_test.c memcpy/02_dest_null_test.c memcpy/03_src_empty_test.c\
 				atoi/00_launcher.c atoi/01_basic_test.c atoi/02_basic2_test.c \
@@ -32,7 +33,7 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
 TESTINCLUDE	= -I atoi\
-				-I strlen -I strdup -I strchr -I strncmp\
+				-I strlen -I strdup -I strchr -I strncmp -I strnstr\
 				-I memset -I memcpy\
 				-I isdigit -I isalpha -I isalnum\
 				-I tolower -I toupper
