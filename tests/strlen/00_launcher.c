@@ -6,11 +6,11 @@ int strlen_launcher(void)
 
 	testlist = NULL;
 	puts("STRLEN:");
-	load_test(&testlist, "Basic test", &basic_test);
-	load_test(&testlist, "NULL test", &null_test);
-	load_test(&testlist, "UNICODE test", &unicode_test);
-	load_test(&testlist, "EMPTY test", &empty_test);
-	load_test(&testlist, "ZERO test", &zero_test);
+	load_test(&testlist, "01_Basic test", &basic_test);
+	load_test(&testlist, "02_NULL test", &null_test);
+	load_test(&testlist, "03_UNICODE test", &unicode_test);
+	load_test(&testlist, "04_EMPTY test", &empty_test);
+	load_test(&testlist, "05_ZERO test", &zero_test);
 	//load_test(&testlist, "Bigger string test", &bigger_str_test); /* This test won't be loaded */
 	return(launch_tests(&testlist));
 }

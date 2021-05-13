@@ -7,9 +7,9 @@ int isalpha_launcher(void)
 
 	testlist = NULL;
 	puts("ISALPHA:");
-	load_test(&testlist, "Basic test", &isalpha_basic_test);
-	load_test(&testlist, "NULL test", &isalpha_null_test);
-	load_test(&testlist, "DIGIT test", &isalpha_digit_test);
+	load_test(&testlist, "01_Basic test", &isalpha_basic_test);
+	load_test(&testlist, "02_NULL test", &isalpha_null_test);
+	load_test(&testlist, "03_DIGIT test", &isalpha_digit_test);
 	//load_test(&testlist, "Bigger string test", &bigger_str_test); /* This test won't be loaded */
 	return(launch_tests(&testlist));
 }
