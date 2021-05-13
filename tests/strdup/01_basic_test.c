@@ -5,7 +5,7 @@ int	strdup_basic_test(void)
 {
 	char	*str;
 
-	str = "aaaa bbbbb";
+	str = "aaabb";
 	if (ft_strdup(str) == strdup(str))
 		return(0);
 	else
