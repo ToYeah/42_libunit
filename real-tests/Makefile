@@ -1,7 +1,5 @@
 NAME		= grademe
 SRCS		= main.c \
-				true_test/00_launcher.c true_test/01_ok_test.c true_test/02_ko_test.c\
-				true_test/03_segv_test.c true_test/04_bus_test.c\
 				strlen/00_launcher.c strlen/01_basic_test.c strlen/02_space_test.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
 				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_empty_test.c\
