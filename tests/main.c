@@ -2,6 +2,7 @@
 #include "ft_strlen_test.h"
 #include "ft_strdup_test.h"
 #include "ft_strchr_test.h"
+#include "ft_strrchr_test.h"
 #include "ft_strncmp_test.h"
 #include "ft_strnstr_test.h"
 #include "ft_memset_test.h"
@@ -20,6 +21,7 @@ int	main(void)
 	strlen_launcher();
 	strdup_launcher();
 	strchr_launcher();
+	strrchr_launcher();
 	strncmp_launcher();
 	strnstr_launcher();
 	memset_launcher();
