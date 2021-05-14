@@ -79,7 +79,7 @@ testinclude:
 update: srcs testinclude
 
 test: all
-	$(NAME)
+	./$(NAME)
 
 .PHONY: all clean fclean re srcs testinclude update
 
