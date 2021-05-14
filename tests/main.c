@@ -6,6 +6,7 @@
 #include "ft_strnstr_test.h"
 #include "ft_memset_test.h"
 #include "ft_memcpy_test.h"
+#include "ft_memmove_test.h"
 #include "ft_isdigit_test.h"
 #include "ft_isalpha_test.h"
 #include "ft_isalnum_test.h"
@@ -23,6 +24,7 @@ int	main(void)
 	strnstr_launcher();
 	memset_launcher();
 	memcpy_launcher();
+	memmove_launcher();
 	isdigit_launcher();
 	isalpha_launcher();
 	isalnum_launcher();
