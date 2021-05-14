@@ -42,7 +42,7 @@ void	exec_test(t_unit_test *test)
 	test->res = analyze_test_result(status);
 }
 
-t_unit_test	*exec_test_list(t_unit_test *list, int *res)
+t_unit_test	*exec_test_list(t_unit_test *list, int *count, int *success)
 {
 	t_unit_test	*target;
 
@@ -50,7 +50,9 @@ t_unit_test	*exec_test_list(t_unit_test *list, int *res)
 	while (target)
 	{
 		exec_test(target);
-		*res += target->res;
+		(*count) += 1;
+		if (target->res == RESOK)
+			(*success) += 1;
 		if (target->next == NULL)
 			break ;
 		else
