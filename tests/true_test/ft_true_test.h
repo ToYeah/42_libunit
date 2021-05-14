@@ -1,5 +1,5 @@
-#ifndef FT_TURE_TEST_H
-# define FT_TURE_TEST_H
+#ifndef FT_TRUE_TEST_H
+# define FT_TRUE_TEST_H
 
 # include <stdio.h>
 
