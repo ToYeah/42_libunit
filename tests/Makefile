@@ -1,4 +1,4 @@
-NAME		= libfttest
+NAME		= grademe
 SRCS		= main.c \
 				true_test/00_launcher.c true_test/01_ok_test.c true_test/02_ko_test.c\
 				true_test/03_segv_test.c true_test/04_bus_test.c\
