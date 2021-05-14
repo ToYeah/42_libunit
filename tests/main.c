@@ -1,3 +1,4 @@
+#include "ft_true_test.h"
 #include "ft_atoi_test.h"
 #include "ft_strlen_test.h"
 #include "ft_strdup_test.h"
@@ -17,6 +18,7 @@
 
 int	main(void)
 {
+	true_test_launcher();
 	atoi_launcher();
 	strlen_launcher();
 	strdup_launcher();

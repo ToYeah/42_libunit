@@ -1,5 +1,7 @@
 NAME		= libfttest
 SRCS		= main.c \
+				true_test/00_launcher.c true_test/01_ok_test.c true_test/02_ko_test.c\
+				true_test/03_segv_test.c true_test/04_bus_test.c\
 				strlen/00_launcher.c strlen/01_basic_test.c strlen/02_space_test.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
 				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_empty_test.c\
@@ -34,7 +36,7 @@ LIBUNIT		= $(LIBUNIT_DIR)/libunit.a
 
 LIBS		= -lunit -L $(LIBUNIT_DIR)
 
-TESTINCLUDE	= -I atoi\
+TESTINCLUDE	= -I true_test -I atoi\
 				-I strlen -I strdup -I strchr -I strrchr -I strncmp -I strnstr\
 				-I memset -I memcpy -I memmove\
 				-I isdigit -I isalpha -I isalnum\
