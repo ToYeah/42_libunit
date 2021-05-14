@@ -13,14 +13,30 @@ const char	*str_test_res(t_test_res res)
 	return ("UNKNOWN");
 }
 
+static void	print_target(t_unit_test *target, const char *str)
+{
+	if (my_strcmp(str, "OK") == 0)
+		printf("\x1b[32mOK\033[m");
+	if (my_strcmp(str, "KO") == 0)
+		printf("\x1b[31mKO\033[m");
+	if (my_strcmp(str, "SEGV") == 0)
+		printf("\x1b[34mSEGV\033[m");
+	if (my_strcmp(str, "BUS") == 0)
+		printf("\x1b[33mBUS\033[m");
+	printf(": %s\n", target->description);
+	return ;
+}
+
 t_unit_test	*print_test_list(t_unit_test *list, int count, int res)
 {
 	t_unit_test	*target;
+	const char	*str;
 
 	target = list;
 	while (target)
 	{
-		printf("%s: %s\n", str_test_res(target->res), target->description);
+		str = str_test_res(target->res);
+		print_target(target, str);
 		if (target->prev == NULL)
 			break ;
 		else

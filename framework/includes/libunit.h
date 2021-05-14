@@ -31,6 +31,7 @@ typedef struct s_unit_test
 
 char		*my_strdup(const char *str);
 size_t		my_strlen(const char *str);
+int			my_strcmp(const char *s1, const char *s2);
 
 t_unit_test	*test_init(const char *description, t_test_func f);
 void		delete_test(t_unit_test **test);
@@ -39,6 +40,7 @@ void		test_add_front(t_unit_test **list_p, t_unit_test *new);
 void		error_exit(void);
 void		load_test(t_unit_test **list, const char *des, t_test_func f);
 int			launch_tests(t_unit_test **test);
+
 t_unit_test	*exec_test_list(t_unit_test *list, int *count, int *success);
 t_unit_test	*print_test_list(t_unit_test *list, int count, int res);
 #endif
