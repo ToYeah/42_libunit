@@ -2,12 +2,12 @@ NAME		= libfttest
 SRCS		= main.c \
 				strlen/00_launcher.c strlen/01_basic_test.c strlen/02_space_test.c\
 				strlen/03_unicode_test.c strlen/04_empty_test.c strlen/05_zero_test.c\
-				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_null_test.c strdup/03_empty_test.c\
+				strdup/00_launcher.c strdup/01_basic_test.c strdup/02_empty_test.c\
 				strchr/00_launcher.c strchr/01_basic_test.c strchr/02_nothing_test.c\
 				strncmp/00_launcher.c strncmp/01_basic_test.c strncmp/02_same_str_test.c\
 				strnstr/00_launcher.c strnstr/01_basic_test.c strnstr/02_nothing_test.c\
-				memset/00_launcher.c memset/01_basic_test.c memset/02_null_test.c memset/03_zero_test.c\
-				memcpy/00_launcher.c memcpy/01_basic_test.c memcpy/02_dest_null_test.c memcpy/03_src_empty_test.c\
+				memset/00_launcher.c memset/01_basic_test.c memset/02_zero_test.c\
+				memcpy/00_launcher.c memcpy/01_basic_test.c memcpy/02_src_empty_test.c\
 				atoi/00_launcher.c atoi/01_basic_test.c atoi/02_basic2_test.c \
 				atoi/03_zero_test.c atoi/04_neg_test.c \
 				atoi/05_neg2_test.c atoi/06_intmax_test.c atoi/07_intmin_test.c \

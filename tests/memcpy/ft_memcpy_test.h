@@ -4,7 +4,6 @@
 #include <string.h>
 
 int	memcpy_basic_test(void);
-int	memcpy_null_test(void);
 int	memcpy_empty_test(void);
 int memcpy_launcher(void);
 

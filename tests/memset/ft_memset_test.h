@@ -4,7 +4,6 @@
 #include <stdio.h>
 
 int	memset_basic_test(void);
-int	memset_null_test(void);
 int	memset_zero_test(void);
 int memset_launcher(void);
 
