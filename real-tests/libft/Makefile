@@ -1,20 +1,5 @@
 NAME=libft.a
-SRCS=\
-ft_strlen.c\
-ft_strdup.c\
-ft_strchr.c\
-ft_strrchr.c\
-ft_strnstr.c\
-ft_strncmp.c\
-ft_memcpy.c\
-ft_memset.c\
-ft_memmove.c\
-ft_atoi.c\
-ft_isdigit.c\
-ft_isalpha.c\
-ft_isalnum.c\
-ft_tolower.c\
-ft_toupper.c
+SRCS= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strdup.c ft_strlen.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c 
 
 CC=gcc
 CCFLAGS=-Wall -Wextra -Werror
@@ -38,4 +23,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONEY	: all clean fclean re
+.PHONY	: all clean fclean re
