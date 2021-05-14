@@ -27,7 +27,7 @@ CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 OBJS		= $(SRCS:.c=.o)
 
-TARGET_DIR	= ../real-tests/libft
+TARGET_DIR	= ./libft
 TARGET_NAME	= libft.a
 TARGET		= $(TARGET_DIR)/$(TARGET_NAME)
 
