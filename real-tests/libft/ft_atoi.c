@@ -6,7 +6,7 @@
 /*   By: msakaseg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 14:46:06 by msakaseg          #+#    #+#             */
-/*   Updated: 2020/07/12 17:41:37 by msakaseg         ###   ########.fr       */
+/*   Updated: 2021/05/14 17:39:16 by msakaseg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static const char	*ft_isspace(const char *str)
 	return (str);
 }
 
-int					ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		t;
 	int		s;

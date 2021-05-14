@@ -6,7 +6,7 @@
 /*   By: totaisei <totaisei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 21:54:34 by totaisei          #+#    #+#             */
-/*   Updated: 2020/10/12 02:48:36 by totaisei         ###   ########.fr       */
+/*   Updated: 2021/05/14 17:40:13 by msakaseg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i] != (char)c)
