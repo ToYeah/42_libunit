@@ -8,7 +8,7 @@ int	atoi_longmax_test(void)
 
 	s = "LONG_MAX";
 	if (ft_atoi(s) == atoi(s))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

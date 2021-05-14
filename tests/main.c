@@ -13,7 +13,7 @@
 #include "ft_toupper_test.h"
 #include "libunit.h"
 
-int main(void)
+int	main(void)
 {
 	atoi_launcher();
 	strlen_launcher();

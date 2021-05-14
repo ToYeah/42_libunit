@@ -4,7 +4,7 @@
 int	tolower_lower_test(void)
 {
 	if (ft_tolower('a') == tolower('a'))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

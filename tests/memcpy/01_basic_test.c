@@ -10,7 +10,7 @@ int	memcpy_basic_test(void)
 	dest = (void *)my_strdup("bbbb bbbbb");
 	str = (void *)my_strdup("aaaa aaaaa");
 	if (ft_memcpy(dest, str, 4) == memcpy(dest, str, 4))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

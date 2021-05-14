@@ -1,8 +1,9 @@
 #include "ft_atoi_test.h"
 #include "libunit.h"
-int atoi_launcher(void)
+
+int	atoi_launcher(void)
 {
-	t_unit_test *testlist;
+	t_unit_test	*testlist;
 
 	testlist = NULL;
 	puts("ATOI:");
@@ -21,6 +22,5 @@ int atoi_launcher(void)
 	load_test(&testlist, "13_TEXT_2 test", &atoi_text2_test);
 	load_test(&testlist, "14_LONGMAX test", &atoi_longmax_test);
 	load_test(&testlist, "15_LONGMIN test", &atoi_longmin_test);
-	//load_test(&testlist, "Bigger string test", &bigger_str_test); /* This test won't be loaded */
-	return(launch_tests(&testlist));
+	return (launch_tests(&testlist));
 }

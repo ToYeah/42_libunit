@@ -3,12 +3,11 @@
 
 int	space_test(void)
 {
-	char *str;
+	char	*str;
 
 	str = "aaaa     aaa";
-
 	if (ft_strlen(str) == strlen(str))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

@@ -1,7 +1,7 @@
 #ifndef FT_ATOI_TEST_H
 # define FT_ATOI_TEST_H
 
-#include <string.h>
+# include <string.h>
 
 int	atoi_basic_test(void);
 int	atoi_basic2_test(void);

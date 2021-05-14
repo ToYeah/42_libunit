@@ -8,7 +8,7 @@ int	atoi_longmin_test(void)
 
 	s = "LONG_MIN";
 	if (ft_atoi(s) == atoi(s))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

@@ -4,7 +4,7 @@
 int	empty_test(void)
 {
 	if (ft_strlen("") == strlen(""))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

@@ -4,7 +4,7 @@
 int	isalpha_basic_test(void)
 {
 	if (ft_isalpha('a') == isalpha('a'))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

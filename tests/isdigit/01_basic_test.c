@@ -4,7 +4,7 @@
 int	isdigit_basic_test(void)
 {
 	if (ft_isdigit('4') == isdigit('4'))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }

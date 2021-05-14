@@ -7,7 +7,7 @@ int	atoi_text_test(void)
 
 	s = "adg123";
 	if (ft_atoi(s) == atoi(s))
-		return(0);
+		return (0);
 	else
-		return(-1);
+		return (-1);
 }
